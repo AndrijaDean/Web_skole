@@ -1,0 +1,288 @@
+*{
+    font-family: Tahoma;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  color:#F5F5F5;
+  font-size: 2em;
+  background-color: #008080;
+  opacity: 0.5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  min-width: 30vh;
+  padding: 1vh;
+  border-radius: 10px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+ol, ul{
+  list-style-type: upper-roman;
+  color: #333;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.slika1 {
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  height: 500px;
+  z-index: 10;
+}
+
+.slika2{
+  position: relative;
+  height: 500px;
+  float: right;
+}
+
+.slika3 {
+  position: sticky;
+  top: 0;
+  height: 500px;
+  float: right;
+}
+
+.slika4{
+  position: absolute;
+  height: 500px;
+  float: right;
+}
+
+.slika5{
+  z-index: 4;
+  height: 500px;
+  float: left;
+}
+.sec{
+  height: 200vh;
+}
+
+.nnav{
+  text-decoration-line: none;
+  color: #F5F5F5;
+}
+.anav{
+  padding: 3px;
+  border-radius: 10px;
+  border: #F5F5F5 1px solid;
+  text-decoration-line: none;
+  color: #F5F5F5;
+  margin-left: 2vh;
+}
+.anav:link{
+  padding: 3px;
+  border-radius: 10px;
+  border: #F5F5F5 1px solid;
+  text-decoration-line: none;
+  color: #F5F5F5;
+  margin-left: 2vh;
+}
+.anav:hover{
+  text-shadow: 1px 1px 1px #000000;
+  color:#F5F5F5;
+  transform: scale(1.1);
+}
+.anav:visited{
+  padding: 3px;
+  border-radius: 10px;
+  border: #F5F5F5 1px solid;
+  text-decoration-line: none;
+  color: #F5F5F5;
+  margin-left: 2vh;
+}
+.anav:active{
+  padding: 3px;
+  border-radius: 10px;
+  border: #F5F5F5 1px solid;
+  text-decoration-line: none;
+  color: #F5F5F5;
+  margin-left: 2vh;
+}
+
+header{
+  background-size: cover;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.title {
+  margin: 0px;
+  text-align: center;
+  color:#008080;
+  font-size: 10em;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  background-color: #F5F5F5;
+  opacity: 0.5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  min-width: 30vh;
+  height: 50vh;
+  border-radius: 10px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://api.srednja.hr/app/uploads/2013/05/RCK-arhitektura-dron-2048x1231.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.break{
+  justify-content: center;
+  display: flex;
+}
+.breakKontent{
+  color:#F5F5F5;
+  background-color: #008080;
+  margin: 5vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  min-height: 50vh;
+  min-width: 30vh;
+  padding: 2vh;
+  border-radius: 10px;
+  width: 10%;
+  flex: 1;
+  opacity: 0.9;
+}
+
+.break .box{
+  color: #008080;
+  background-color: #F5F5F5;
+  margin: 5vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  min-width: 30vh;
+  height: 50vh;
+  padding: 2vh;
+  border-radius: 10px;
+  width: 25%;
+  flex: 1;
+}
+
+.footer{
+  justify-content: center;
+  display: flex;
+}
+.footerKontent{
+  color:#008080;
+  background-color: #F5F5F5;
+  margin: 2vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  min-height: 30vh;
+  min-width: 30vh;
+  padding: 2vh;
+  border-radius: 10px;
+  width: 30%;
+  flex: 1;
+}
+
+.mainbox {
+  display: flex;
+  min-height: 10vh;
+  justify-content: center;
+  min-width: 100%;
+  flex-wrap: wrap;
+}
+
+.novosti{
+  display: flex;
+  min-height: 30vh;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.novosti .box{
+  color: #008080;
+  background-color: #F5F5F5;
+  margin: 5vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  min-width: 30vh;
+  height: 50vh;
+  padding: 2vh;
+  border-radius: 10px;
+  width: 33%;
+  flex: 1;
+}
+
+.box {
+
+  color: #008080;
+  background-color: #F5F5F5;
+  margin: 5vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  min-width: 30vh;
+  padding: 2vh;
+  border-radius: 10px;
+  width: 30%;
+  flex: 1;
+}
+.box p{
+  font-size: 20px;
+}
+h2{
+  color: #008080;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.slikabox {
+  border-radius: 10px;
+  margin-top: 3vh;
+  width: 100%;
+  height: 200px;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .novosti, .mainbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+    margin: 2vh 0;
+    max-width: 400px;
+  }
+
+  .title {
+    font-size: 3em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+.box:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
